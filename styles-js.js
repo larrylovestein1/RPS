@@ -40,11 +40,35 @@ function playRound (playerSelection,computerSelection){
       }
 
      
-     // i made a temporary answer value for the player later i will add in a input value so that i can choose my value 
+     //trying out loops with the game() function that plays five rounds , then adding something to keep track of score and announce winner after
+     // i get the function working properly...
+
      
-      const playerSelection = 'ROCK';
+     function game(){
+      //starts to loop the playRound function
+      for(let i = 0; i < 5; i++){
+        //calls playRound function and redefines the values above to fight scope conflicts.
+          //passing in newly returned values from playerround and computerselection
+          const computerSelection = getComputerChoice();
+          const playerSelection = 'ROCK';
+          const currentRound = playRound(playerSelection,computerSelection);
+          //log our results
+          console.log(currentRound);
+      }
+  
+  }
+
+
+
+ 
+
+
+
+// i made a temporary answer value for the player later i will add in a input value so that i can choose my value 
+      const playerSelection = prompt('Choose your weapon!');
       const computerSelection = getComputerChoice();          
-      console.log(playRound(playerSelection, computerSelection));
+      console.log(game());
+
 
 
 
