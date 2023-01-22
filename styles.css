@@ -1,0 +1,41 @@
+body{
+    background-color: #f8c8dc;
+    font-family: andale mono,monospace;
+}
+
+
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.display{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50pxpx;
+    padding-top: 50px;
+}
+
+.selections{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+#start{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+
+#score{
+    display: flex;
+    justify-content: center;
+}
+
+#track{
+    display: flex;
+    justify-content: space-evenly;
+}
